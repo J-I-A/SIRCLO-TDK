@@ -1,0 +1,22 @@
+git init - inisialisasi di gitshell
+git status - untuk mengetahui status repository (penting untuk tahu perubahan yang terjadi)
+git add [nama file di dalam folder, ditulis dengan path jika ingin secara spesifik dimasukkan dalam folder tertentu]
+	git add *.txt - untuk semua file .txt
+	git add . - untuk seluruh folder
+git log - untuk melihat log history perubahan
+git remote add origin https://github.com/J-I-A/SIRCLO-TDK.git - untuk pertama kali saat membuat local repository masuk ke github
+git commit -m "comment update" - untuk commit dengan komentar
+git push - untuk memasukkan ke repository
+	git push -u origin master - Jika untuk pertama kali pada branch master
+git clone https://github.com/J-I-A/SIRCLO-TDK.git - supaya collaborator bisa clone untuk pertama kalinya dari github ke local repo laptopnya
+git pull - menarik perubahan dari github ke local repo
+	git pull origin master
+*git diff HEAD - untuk melihat perbedaan yang dibuat dari recent commit 
+*git diff --staged untuk melihat perubahan saat staging
+*git reset [nama file dalam folder] - untuk reset peruvasaat staging 
+*git checkout -- [nama file berubah yang diinginkan sejak commit terakhir] - Kalau mau balik tinggal: git checkout master
+*git branch [nama branch] - untuk membuat cabang selain branch master
+*git checkout [nama branch] - switch branch dari master ke [nama branch]
+*git rm '*.txt' - untuk remove semua files .txt (kalau mau buang seluruh isi folder bisa dengan git rm -r [nama folder]). Jangan lupa  di commit 
+*git merge [nama branch] - penggabungan semua branch jadi ke master RAWAN KONFLIK!!!
+*git branch -d [nama branch] - untuk delete branch
